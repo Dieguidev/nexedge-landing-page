@@ -11,7 +11,7 @@ export function Header() {
   return (
     <header className="fixed inset-x-0 top-0 z-50 w-full overflow-hidden">
       <div
-        className="absolute inset-0 bg-gradient-to-r from-[#000000] via-[#0D0F35] to-[#3438D7]"
+        className="absolute inset-0 bg-gradient-to-r from-[#000000] via-[#090C3B] to-[#3238DF]"
         aria-hidden
       />
 
