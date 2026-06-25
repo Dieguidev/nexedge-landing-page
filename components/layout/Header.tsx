@@ -9,8 +9,13 @@ import { MobileNav } from "@/components/layout/MobileNav";
 
 export function Header() {
   return (
-    <header className="fixed inset-x-0 top-0 z-50 border-b border-white/[0.06] bg-header">
-      <Container>
+    <header className="fixed inset-x-0 top-0 z-50 w-full overflow-hidden">
+      <div
+        className="absolute inset-0 bg-gradient-to-r from-[#000000] via-[#0D0F35] to-[#3438D7]"
+        aria-hidden
+      />
+
+      <Container className="relative">
         <div className="flex h-[68px] items-center lg:h-[72px]">
           <Logo />
 
@@ -20,7 +25,7 @@ export function Header() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="text-[13px] font-medium text-white transition-colors hover:text-accent xl:text-sm"
+                  className="text-[13px] font-bold text-white transition-colors hover:text-accent xl:text-sm"
                 >
                   {link.label}
                 </Link>
