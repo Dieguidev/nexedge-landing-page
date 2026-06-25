@@ -24,15 +24,17 @@ export function ServiceCard({
         className,
       )}
     >
-      <div className="flex h-[8.5rem] shrink-0 items-center justify-center overflow-hidden bg-accent sm:h-[9.5rem]">
-        <Image
-          src={icon}
-          alt=""
-          width={320}
-          height={320}
-          className="h-[92%] w-[92%] scale-[1.35] object-contain"
-          aria-hidden
-        />
+      <div className="relative h-[8.5rem] shrink-0 bg-accent sm:h-[9.5rem]">
+        <div className="absolute inset-[2.5%]">
+          <Image
+            src={icon}
+            alt=""
+            fill
+            sizes="255px"
+            className="object-contain object-center"
+            aria-hidden
+          />
+        </div>
       </div>
 
       <div className="flex flex-1 flex-col items-center px-5 pb-6 pt-5 text-center sm:px-6 sm:pb-7 sm:pt-6">
