@@ -54,7 +54,7 @@ export function ServicesSection() {
   return (
     <section
       id="servicios"
-      className="bg-gradient-to-br from-[#030508] via-header to-[#0c1f3f] pb-20 sm:pb-24"
+      className="w-full bg-gradient-to-r from-[#000000] via-[#090C3B] to-[#3238DF] pb-20 sm:pb-24"
     >
       <StatsBar />
 
