@@ -90,8 +90,8 @@ export const whyChooseUs = [
     title: "Soluciones Escalables",
     description:
       "Desarrollamos tecnología que crecerá a la par del volumen de tu negocio.",
-    image: "/images/hero/hero-bg-global-network.jpg",
-    imagePosition: "center 20%",
+    image: "/images/sections/why-soluciones-escalables.png",
+    imagePosition: "center center",
   },
   {
     title: "Acompañamiento Estratégico",

@@ -23,17 +23,20 @@ export function WhyChooseUsSection() {
 
         <AnimatedSection
           stagger
-          className="grid gap-12 sm:grid-cols-2 sm:gap-10 lg:grid-cols-3 lg:gap-12 xl:gap-16"
+          className="grid w-full grid-cols-1 justify-items-center gap-12 sm:grid-cols-2 sm:gap-10 lg:grid-cols-3 lg:gap-12 xl:gap-16"
         >
           {whyChooseUs.map((item) => (
-            <AnimatedItem key={item.title}>
-              <article className="flex h-full flex-col items-center text-center sm:items-start sm:text-left">
+            <AnimatedItem
+              key={item.title}
+              className="flex w-full max-w-sm justify-center lg:max-w-none"
+            >
+              <article className="flex w-full max-w-sm flex-col items-center text-center">
                 <div className="relative mb-6 size-40 shrink-0 overflow-hidden rounded-full sm:mb-7 sm:size-44 lg:size-48">
                   <Image
                     src={item.image}
                     alt=""
                     fill
-                    sizes="(max-width: 640px) 160px, 192px"
+                    sizes="(max-width: 1024px) 176px, 192px"
                     className="object-cover"
                     style={{ objectPosition: item.imagePosition }}
                   />
@@ -43,7 +46,7 @@ export function WhyChooseUsSection() {
                   {item.title}
                 </h3>
 
-                <p className="mt-3 max-w-xs text-sm leading-relaxed text-white sm:mt-4 sm:max-w-none sm:text-base">
+                <p className="mt-3 text-sm leading-relaxed text-white sm:mt-4 sm:text-base">
                   {item.description}
                 </p>
               </article>

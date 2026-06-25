@@ -23,12 +23,12 @@ export function AnimatedSection({
   const prefersReducedMotion = useReducedMotion();
 
   if (prefersReducedMotion) {
-    return <div className={className}>{children}</div>;
+    return <div className={cn("w-full", className)}>{children}</div>;
   }
 
   return (
     <motion.div
-      className={cn(className)}
+      className={cn("w-full", className)}
       initial="hidden"
       whileInView="visible"
       viewport={defaultViewport}
@@ -53,11 +53,11 @@ export function AnimatedItem({
   const prefersReducedMotion = useReducedMotion();
 
   if (prefersReducedMotion) {
-    return <div className={className}>{children}</div>;
+    return <div className={cn("w-full", className)}>{children}</div>;
   }
 
   return (
-    <motion.div className={className} variants={staggerItem}>
+    <motion.div className={cn("w-full", className)} variants={staggerItem}>
       {children}
     </motion.div>
   );
