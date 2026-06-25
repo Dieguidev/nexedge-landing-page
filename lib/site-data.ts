@@ -90,18 +90,21 @@ export const whyChooseUs = [
     title: "Soluciones Escalables",
     description:
       "Desarrollamos tecnología que crecerá a la par del volumen de tu negocio.",
-    icon: "/icons/features/soluciones-escalables.png",
+    image: "/images/hero/hero-bg-global-network.jpg",
+    imagePosition: "center 20%",
   },
   {
     title: "Acompañamiento Estratégico",
     description:
       "No somos solo proveedores técnicos; somos socios en tu estrategia digital.",
-    icon: "/icons/ui/burbuja-dialogo.png",
+    image: "/images/sections/about-team-meeting.png",
+    imagePosition: "center center",
   },
   {
     title: "Garantía y Soporte",
     description: "Respaldo continuo post-lanzamiento.",
-    icon: "/icons/features/garantia-soporte.png",
+    image: "/images/hero/hero-bg-coding.jpg",
+    imagePosition: "center center",
   },
 ];
 
