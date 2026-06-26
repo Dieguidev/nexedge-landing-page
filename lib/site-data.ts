@@ -136,7 +136,7 @@ export const processSteps = [
     title: "Lanzamiento",
     description:
       "Desplegamos tu proyecto y te acompañamos en cada paso del lanzamiento.",
-    icon: "/icons/process/lanzamiento.png",
+    icon: "/icons/features/cloud-infraestructura.png",
   },
   {
     title: "Soporte",
