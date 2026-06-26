@@ -31,16 +31,15 @@ export function WhyChooseUsSection() {
               className="flex w-full max-w-sm justify-center lg:max-w-none"
             >
               <article className="flex w-full max-w-sm flex-col items-center text-center">
-                <div className="relative mb-6 size-40 shrink-0 overflow-hidden rounded-full sm:mb-7 sm:size-44 lg:size-48">
-                  <Image
-                    src={item.image}
-                    alt=""
-                    fill
-                    sizes="(max-width: 1024px) 176px, 192px"
-                    className="object-cover"
-                    style={{ objectPosition: item.imagePosition }}
-                  />
-                </div>
+                <Image
+                  src={item.image}
+                  alt=""
+                  width={400}
+                  height={400}
+                  sizes="(max-width: 1024px) 176px, 192px"
+                  className="mb-6 size-40 rounded-full object-cover sm:mb-7 sm:size-44 lg:size-48"
+                  style={{ objectPosition: item.imagePosition }}
+                />
 
                 <h3 className="text-lg font-bold text-accent sm:text-xl">
                   {item.title}

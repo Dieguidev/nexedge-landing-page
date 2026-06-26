@@ -20,8 +20,7 @@ export const navLinks = [
 export const heroContent = {
   brandName: "NEXEDGE",
   title: "Innovación con Propósito",
-  subtitle:
-    "Tecnología que cierra brechas y acompaña tu crecimiento digital",
+  subtitle: "Tecnología que cierra brechas y acompaña tu crecimiento digital",
   ctas: [
     { label: "Descubre más", href: "#servicios", variant: "teal" as const },
     {
@@ -152,8 +151,7 @@ export const portfolioProjects = [
     title: "GESTOREDU",
     category: "Desarrollo Web & UI/UX",
     tag: "Plataforma Escolar",
-    description:
-      "Gestión Escolar moderna, ultrarrápida y sin complicaciones.",
+    description: "Gestión Escolar moderna, ultrarrápida y sin complicaciones.",
     image: "/images/portfolio/gestoredu.png",
     cta: "Ver Caso de Estudio",
     href: "#contacto",
@@ -162,8 +160,7 @@ export const portfolioProjects = [
     title: "PERÚ MISTERIOSO",
     category: "Branding & Diseño Visual",
     tag: "Turismo Discovery",
-    description:
-      "Descubre los secretos ancestrales del corazón de sudamérica.",
+    description: "Descubre los secretos ancestrales del corazón de sudamérica.",
     image: "/images/portfolio/peru-misterioso.png",
     cta: "Explorar Diseño",
     href: "#contacto",
@@ -182,8 +179,7 @@ export const portfolioProjects = [
     title: "PERÚ EXPLORER",
     category: "Desarrollo Web & UI/UX",
     tag: "10 Destinos",
-    description:
-      "Explorando Peruano... 10 Destinos Impredibles del país.",
+    description: "Explorando Peruano... 10 Destinos Impredibles del país.",
     image: "/images/portfolio/peru-explorer.png",
     cta: "Descubrir Más",
     href: "#contacto",
@@ -263,7 +259,10 @@ export const footerLinks = {
   support: [
     { label: "Soporte Técnico", href: "#contacto" },
     { label: "Actualizaciones de Software", href: "#contacto" },
-    { label: "Enviar solicitud de Soporte", href: "mailto:tech@nexedgeperu.com" },
+    {
+      label: "Enviar solicitud de Soporte",
+      href: "mailto:tech@nexedgeperu.com",
+    },
     { label: "Enviar Comentarios", href: "mailto:tech@nexedgeperu.com" },
   ],
 };
