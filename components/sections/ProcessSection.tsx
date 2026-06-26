@@ -10,6 +10,11 @@ import {
   AnimatedItem,
 } from "@/components/ui/AnimatedSection";
 
+const ARROW_SIZES = {
+  right: { src: "/icons/ui/flecha-derecha.png", width: 78, height: 24 },
+  left: { src: "/icons/ui/flecha-izquierda.png", width: 74, height: 24 },
+} as const;
+
 function TimelineArrow({
   direction,
   className,
@@ -17,13 +22,16 @@ function TimelineArrow({
   direction: "left" | "right";
   className?: string;
 }) {
+  const arrow = ARROW_SIZES[direction];
+
   return (
-    <span
+    <Image
+      src={arrow.src}
+      alt=""
+      width={arrow.width}
+      height={arrow.height}
       className={cn(
-        "inline-block h-0 w-0 shrink-0 border-y-[7px] border-y-transparent",
-        direction === "right"
-          ? "border-l-[14px] border-l-accent"
-          : "border-r-[14px] border-r-accent",
+        "h-5 w-[4.625rem] shrink-0 object-contain sm:h-6 sm:w-[5.5rem]",
         className,
       )}
       aria-hidden
@@ -123,17 +131,19 @@ export function ProcessSection() {
                     <StepNumber>{stepNumber}</StepNumber>
                   </div>
 
-                  <div className="hidden items-center md:grid md:grid-cols-[1fr_auto_1fr] md:gap-6 lg:gap-8">
+                  <div className="hidden items-center md:grid md:grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)] md:gap-x-4 lg:gap-x-6">
                     {isLeft ? (
                       <>
-                        <div className="flex items-center justify-end gap-3">
-                          <ProcessStepCard
-                            title={step.title}
-                            description={step.description}
-                            icon={step.icon}
-                            iconSide="left"
-                          />
-                          <TimelineArrow direction="right" />
+                        <div className="flex min-w-0 justify-end">
+                          <div className="inline-flex max-w-full shrink-0 items-center">
+                            <ProcessStepCard
+                              title={step.title}
+                              description={step.description}
+                              icon={step.icon}
+                              iconSide="left"
+                            />
+                            <TimelineArrow direction="right" />
+                          </div>
                         </div>
                         <StepNumber>{stepNumber}</StepNumber>
                         <div aria-hidden />
@@ -142,14 +152,16 @@ export function ProcessSection() {
                       <>
                         <div aria-hidden />
                         <StepNumber>{stepNumber}</StepNumber>
-                        <div className="flex items-center justify-start gap-3">
-                          <TimelineArrow direction="left" />
-                          <ProcessStepCard
-                            title={step.title}
-                            description={step.description}
-                            icon={step.icon}
-                            iconSide="right"
-                          />
+                        <div className="flex min-w-0 justify-start">
+                          <div className="inline-flex max-w-full shrink-0 items-center">
+                            <TimelineArrow direction="left" />
+                            <ProcessStepCard
+                              title={step.title}
+                              description={step.description}
+                              icon={step.icon}
+                              iconSide="right"
+                            />
+                          </div>
                         </div>
                       </>
                     )}
